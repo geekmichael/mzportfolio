@@ -1,6 +1,10 @@
+// Picture element HTML5 shiv
+document.createElement( "picture" );
+
 /* Bootstrap lightbox,
 inspiration from http://www.bootply.com/KBspXYVjaX
 ------------------------ */
+
 $(document).on('click', '[data-toggle="lightbox"]', function(event){
     event.preventDefault();
   	$('.modal-body').empty();
@@ -11,6 +15,9 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event){
   	$('#myModal').modal({show:true});
     return false;
 });
+
+/* Back to top
+------------------------- */
 $(document).ready(function() {
     var offset = 220;
     var duration = 500;
